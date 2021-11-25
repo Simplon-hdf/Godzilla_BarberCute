@@ -15,7 +15,7 @@
 
 .card {
   height: 35vh;
-  width: 12vw;
+  width: 15vw;
   display: grid;
   background-color: #ffffff;
   box-shadow: 0 6vh .4rem .4rem rgba(34, 34, 34, 0.05);
@@ -43,15 +43,9 @@
 }
 
 .card .background-box img {
-  border-radius: 1rem;
-  height: auto;
-  width: 100%;
-}
-
-.card .background-box img {
   background-color: white;
   border-radius: 1rem;
-  height: auto;
+  height: 160%;
   width: 100%;
   -webkit-filter: grayscale(75%);
   filter: grayscale(75%);
@@ -74,7 +68,7 @@
 }
 
 .card .smart-box {
-  height: 9vh;
+  height: 10vh;
   background-color: #292828;
   border-radius: 1rem;
   grid-template-columns: none;
