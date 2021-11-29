@@ -1,0 +1,13 @@
+/* Footer style */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 3%;
+}
+
+.footer-link {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
+  gap: 30%;
+}
