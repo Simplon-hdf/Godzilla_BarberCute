@@ -9,3 +9,4 @@ dist
 debu.log
 debug.log
 .vscode
+assets/css/main.css.map
