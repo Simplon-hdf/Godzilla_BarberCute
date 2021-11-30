@@ -3,13 +3,16 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Hamid -- developer -- @hamid_idurar
+    Danny -- developer -- <twitter>
+    Wesley -- developer -- <twitter>
 
 # THANKS
 
-    <name>
+  pexels for your photos
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Normalize.css
+    Sass (scss)
