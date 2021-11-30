@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Playball&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Playball&display=swap");
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playball", cursive;
 }
@@ -454,6 +453,87 @@ footer {
   font-weight: bold;
   padding: 0;
   margin: 0;
+}
+
+/* Shop style */
+figure {
+  margin: 0;
+}
+
+.banner {
+  width: 100%;
+}
+
+/* Creations style */
+h2 {
+  text-align: center;
+}
+
+.img-creation img, .img-shop img {
+  border-radius: 10px;
+}
+
+/* .caption-one {
+  background: #000;
+  color: #fff;
+  position: absolute;
+  max-width: 300px;
+  bottom: 0;
+  left:8%;
+  right:0;
+  text-align: center;
+  padding-top: 1rem;
+} */
+/* Shop style */
+.box-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 1.5%;
+}
+
+.box-top img {
+  border-radius: 10px;
+}
+
+.shop-img {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+}
+
+.bag {
+  position: absolute;
+  bottom: 72px;
+  right: 60px;
+}
+
+figcaption, p {
+  text-align: center;
+  padding: 0.5%;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (max-width: 880px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .box-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
