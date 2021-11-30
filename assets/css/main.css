@@ -1,22 +1,50 @@
-/* Header */
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Playball&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playball", cursive;
+}
+
+figcaption, ul, li {
+  font-family: "Oranienbaum", serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* image style */
+figure {
+  margin: 0;
+}
+
+.banner {
+  width: 100%;
+}
+
+.img-creation img, .img-shop img {
+  border-radius: 10px;
+}
+
+.img-creation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.img-shop {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding-left: 3%;
+}
+
+/* Header */
 header, footer {
   background-color: #202020;
   padding: 1%;
 }
 
-/* Footer style */
-footer {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  padding: 3%;
-}
-
-.footer-link {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: start;
-  gap: 30%;
+header {
+  position: sticky;
 }
 
 /* Navbar in header */
@@ -53,6 +81,20 @@ a {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 20%;
+}
+
+/* Footer style */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 3%;
+}
+
+.footer-link {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
+  gap: 30%;
 }
 
 /* Video style  */
