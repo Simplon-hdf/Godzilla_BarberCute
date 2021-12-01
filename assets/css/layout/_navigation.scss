@@ -23,6 +23,10 @@ a {
   gap: 20%;
 }
 
+.nav-left a {
+  text-transform: capitalize;
+}
+
 .logo-header {
   display: grid;
   justify-content: center;
@@ -32,4 +36,18 @@ a {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 20%;
+}
+
+.nav-right a {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 780px) {
+  .logo-header {
+    justify-content: start;
+    padding: 2.5%;
+  }
+  .nav-left, .nav-right {
+    display: none;
+  }
 }

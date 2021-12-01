@@ -11,3 +11,19 @@ footer {
   justify-items: start;
   gap: 30%;
 }
+
+@media screen and (max-width: 780px) {
+
+  footer {
+    height: 35vh;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .footer-link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column:  1 / -1;
+    gap: 2%;
+  }
+}

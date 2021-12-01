@@ -10,6 +10,10 @@ h2 {
   text-align: center;
 }
 
+body {
+  height: 100vh;
+}
+
 /* image style */
 
 figure  {
@@ -37,14 +41,25 @@ figure  {
 }
 
 @media screen and (max-width: 780px) {
-  .navbar {
+  .creations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    justify-content: center;
+    gap: 2%;
+  }
+  .creations figure:nth-child(3) {
     display: none;
   }
-
   .shop {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 10%;
+    justify-content: center;
+    padding-bottom: 5%;
+    gap: 1%;
+  }
+  .video {
+    display: none;
   }
 }

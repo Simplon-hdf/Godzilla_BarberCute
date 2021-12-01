@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Playball&display=swap");
+/* Header */
+header, footer {
+  background-color: #202020;
+  padding: 1%;
+}
+
+header {
+  position: sticky;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playball", cursive;
 }
@@ -9,6 +19,10 @@ figcaption, ul, li {
 
 h2 {
   text-align: center;
+}
+
+body {
+  height: 100vh;
 }
 
 /* image style */
@@ -37,7 +51,15 @@ figure {
 }
 
 @media screen and (max-width: 780px) {
-  .navbar {
+  .creations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .creations figure:nth-child(3) {
     display: none;
   }
 
@@ -45,19 +67,15 @@ figure {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 10%;
+    justify-content: center;
+    padding-bottom: 5%;
+    gap: 1%;
+  }
+
+  .video {
+    display: none;
   }
 }
-/* Header */
-header, footer {
-  background-color: #202020;
-  padding: 1%;
-}
-
-header {
-  position: sticky;
-}
-
 /* Navbar in header */
 ul {
   list-style-type: none;
@@ -83,6 +101,10 @@ a {
   gap: 20%;
 }
 
+.nav-left a {
+  text-transform: capitalize;
+}
+
 .logo-header {
   display: grid;
   justify-content: center;
@@ -94,20 +116,20 @@ a {
   gap: 20%;
 }
 
-/* Footer style */
-footer {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  padding: 3%;
+.nav-right a {
+  text-transform: capitalize;
 }
 
-.footer-link {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: start;
-  gap: 30%;
-}
+@media screen and (max-width: 780px) {
+  .logo-header {
+    justify-content: start;
+    padding: 2.5%;
+  }
 
+  .nav-left, .nav-right {
+    display: none;
+  }
+}
 /* Video style  */
 .video {
   text-align: center;
@@ -540,6 +562,36 @@ p {
     justify-items: center;
     align-items: center;
     gap: 10%;
+  }
+}
+/* Footer style */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 3%;
+}
+
+.footer-link {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
+  gap: 30%;
+}
+
+@media screen and (max-width: 780px) {
+  footer {
+    height: 35vh;
+  }
+
+  .logo-footer {
+    display: none;
+  }
+
+  .footer-link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/-1;
+    gap: 2%;
   }
 }
 
