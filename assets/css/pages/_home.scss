@@ -17,21 +17,34 @@ figure  {
 }
 
 .banner {
-  width: 100%;
+  width: 100vw;
 }
 
-.img-creation img, .img-shop img {
+.creations img, .shop img {
   border-radius: 10px;
 }
 
-.img-creation {
+.creations {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 
-.img-shop {
+.shop {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  padding-left: 3%;
+  justify-items: center;
+}
+
+@media screen and (max-width: 780px) {
+  .navbar {
+    display: none;
+  }
+
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 10%;
+  }
 }
